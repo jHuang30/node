@@ -15,11 +15,11 @@ rl.question(`What's ${num1} + ${num2} ?\n`, input => {
   } else {
     rl.setPrompt("try again\n");
     rl.prompt();
-    rl.on("line", input => {
+    rl.on("line", input => {   // when hit enter or return 
       if (input == answer) {
         rl.close();
       } else {
-        rl.setPrompt("try again\n");
+        rl.setPrompt("try again\n");   //content show on the console
         rl.prompt();
       }
     });

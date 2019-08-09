@@ -10,4 +10,4 @@ class ThisClass {
   }
 }
 
-module.exports = { add: add, PI: PI, ThisClass: ThisClass };
+module.exports = { add: add, PI: PI, ThisClass: ThisClass };  //as object
