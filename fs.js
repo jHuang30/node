@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 // fs.writeFile("example.txt", "this is an example", err => {
 //   if (err) {
@@ -28,10 +29,15 @@ const fs = require("fs");
 //   }
 // });
 
-fs.unlink("example2.txt", err => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("file deleted");
-  }
+// fs.unlink("example2.txt", err => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("file deleted");
+//   }
+// });
+
+fs.mkdir(path.join(__dirname, "/test"), {}, err => {
+  if (err) throw err;
+  console.log("created...");
 });
